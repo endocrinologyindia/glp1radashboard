@@ -1,0 +1,28 @@
+Study,Agent,Population,Duration_weeks,Mean_Weight_Loss_Percent,Sample_Size,Placebo_Weight_Loss_Percent,Weight_Loss_5_Percent,Weight_Loss_10_Percent,Weight_Loss_15_Percent,Weight_Loss_20_Percent
+STEP 1 - Semaglutide 2.4mg,Semaglutide,Adults with obesity,68,15.3,1961.0,2.6,86.4,69.1,50.5,35.0
+STEP 5 - Semaglutide 2.4mg (2 years),Semaglutide,Adults with obesity,104,15.2,304.0,2.6,77.1,61.8,52.1,36.1
+SELECT - Semaglutide 2.4mg (4 years),Semaglutide,Adults with overweight/obesity + CVD,208,10.2,17604.0,1.5,67.8,44.2,22.9,11.0
+STEP vs Liraglutide - Semaglutide 2.4mg,Semaglutide,Adults with obesity,68,15.8,338.0,1.9,,70.9,55.6,38.5
+STEP TEENS - Semaglutide 2.4mg (Adolescents),Semaglutide,Adolescents 12-18 years,68,16.1,201.0,0.6,73.0,62.0,,37.0
+STEP 3 - Semaglutide 2.4mg + intensive lifestyle,Semaglutide,Adults with obesity,68,,,,,,,
+SCALE Obesity and Prediabetes - Liraglutide 3.0mg,Liraglutide,Adults with obesity,56,8.0,3731.0,2.6,63.2,33.1,16.0,7.0
+SCALE Diabetes - Liraglutide 3.0mg,Liraglutide,Adults with obesity + T2D,56,6.0,846.0,2.0,54.3,25.2,10.8,4.8
+SCALE Maintenance - Liraglutide 3.0mg,Liraglutide,Adults with obesity (maintenance),56,6.2,422.0,0.2,50.9,26.0,14.4,7.5
+SCALE Teens - Liraglutide 3.0mg (Adolescents),Liraglutide,Adolescents 12-18 years,56,5.0,251.0,1.0,43.3,26.1,,
+SCALE Kids - Liraglutide 3.0mg (Children 6-12),Liraglutide,Children 6-12 years,56,5.8,82.0,-1.6,46.2,,,
+BARI-OPTIMISE - Liraglutide 3.0mg (Post-surgery),Liraglutide,Adults post-bariatric surgery,24,8.82,70.0,0.54,71.9,,,
+STEP vs Liraglutide - Liraglutide 3.0mg,Liraglutide,Adults with obesity,68,6.4,338.0,1.9,25.6,12.0,6.0,
+SURMOUNT-1 - Tirzepatide 15mg,Tirzepatide,Adults with obesity,72,22.5,2539.0,2.4,96.0,89.0,79.0,63.0
+SURMOUNT-1 - Tirzepatide 10mg,Tirzepatide,Adults with obesity,72,21.4,2539.0,2.4,95.0,84.0,72.0,57.0
+SURMOUNT-1 - Tirzepatide 5mg,Tirzepatide,Adults with obesity,72,16.0,2539.0,2.4,89.0,73.0,55.0,37.0
+SURMOUNT-2 - Tirzepatide 15mg (T2D),Tirzepatide,Adults with obesity + T2D,72,15.7,938.0,3.2,93.0,82.0,,57.0
+SURMOUNT-2 - Tirzepatide 10mg (T2D),Tirzepatide,Adults with obesity + T2D,72,13.4,938.0,3.2,89.0,75.0,,48.0
+SURMOUNT-2 - Tirzepatide 5mg (T2D),Tirzepatide,Adults with obesity + T2D,72,9.6,938.0,3.2,76.0,55.0,,26.0
+SURMOUNT-3 - Tirzepatide MTD (post-lifestyle),Tirzepatide,Adults with obesity (post-lifestyle),72,18.4,579.0,2.5,87.5,,,
+SURMOUNT-4 - Tirzepatide MTD (maintenance),Tirzepatide,Adults with obesity (maintenance),88,25.3,670.0,9.9,97.3,92.1,84.1,69.5
+SURMOUNT-5 - Tirzepatide vs Semaglutide,Tirzepatide,Adults with obesity vs Semaglutide,72,20.2,751.0,,94.0,85.0,72.0,55.0
+GZGI Phase 2 - Orforglipron 45mg,Orforglipron,Adults with obesity,36,14.7,272.0,2.3,75.0,58.0,42.0,25.0
+GZGI Phase 2 - Orforglipron 36mg,Orforglipron,Adults with obesity,36,12.6,272.0,2.3,70.0,52.0,35.0,18.0
+GZGI Phase 2 - Orforglipron 24mg,Orforglipron,Adults with obesity,36,11.9,272.0,2.3,68.0,47.0,28.0,12.0
+GZGI Phase 2 - Orforglipron 12mg,Orforglipron,Adults with obesity,36,8.6,272.0,2.3,46.0,26.0,12.0,6.0
+ACHIEVE-1 - Orforglipron 36mg (T2D),Orforglipron,Adults with T2D,40,7.9,559.0,,65.0,,,

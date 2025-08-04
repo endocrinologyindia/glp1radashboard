@@ -1,0 +1,4 @@
+Study,Agent,Population,Duration_weeks,Mean_Weight_Loss_Percent,Sample_Size,Placebo_Weight_Loss_Percent,Weight_Loss_5_Percent,Weight_Loss_10_Percent,Weight_Loss_15_Percent,Weight_Loss_20_Percent
+STEP TEENS - Semaglutide 2.4mg (Adolescents),Semaglutide,Adolescents 12-18 years,68,16.1,201.0,0.6,73.0,62.0,,37.0
+SCALE Teens - Liraglutide 3.0mg (Adolescents),Liraglutide,Adolescents 12-18 years,56,5.0,251.0,1.0,43.3,26.1,,
+SCALE Kids - Liraglutide 3.0mg (Children 6-12),Liraglutide,Children 6-12 years,56,5.8,82.0,-1.6,46.2,,,

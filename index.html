@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLP-1 Receptor Agonist Weight Loss Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>GLP-1 Receptor Agonist Weight Loss Clinical Trial Dashboard</h1>
+            <p class="subtitle">Comprehensive analysis of weight loss efficacy across clinical studies</p>
+            <div class="disclaimer">
+                <p><strong>For research purposes only.</strong> This dashboard presents data from published clinical trials for healthcare professionals and researchers.</p>
+            </div>
+        </header>
+
+        <!-- Overview Statistics -->
+        <section class="overview-section">
+            <h2>Study Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-studies">-</div>
+                    <div class="stat-label">Total Studies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-participants">-</div>
+                    <div class="stat-label">Total Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="pediatric-studies">-</div>
+                    <div class="stat-label">Pediatric Studies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="best-weight-loss">-</div>
+                    <div class="stat-label">Best Weight Loss</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agent Comparison -->
+        <section class="agent-comparison-section">
+            <div class="section-header">
+                <h2>Agent Comparison</h2>
+                <div class="filter-controls">
+                    <label class="filter-label">Filter Agents:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="filter-liraglutide" checked>
+                            <span class="checkmark"></span>
+                            Liraglutide
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="filter-semaglutide" checked>
+                            <span class="checkmark"></span>
+                            Semaglutide
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="filter-tirzepatide" checked>
+                            <span class="checkmark"></span>
+                            Tirzepatide
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="filter-orforglipron" checked>
+                            <span class="checkmark"></span>
+                            Orforglipron
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container" style="height: 400px; position: relative;">
+                <canvas id="agent-comparison-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- Study Details -->
+        <section class="study-details-section">
+            <div class="section-header">
+                <h2>Study Details</h2>
+                <div class="search-controls">
+                    <input type="text" id="study-search" class="form-control" placeholder="Search studies...">
+                </div>
+            </div>
+            
+            <!-- Duration vs Weight Loss Scatter Plot -->
+            <div class="chart-subsection">
+                <h3>Duration vs Weight Loss Relationship</h3>
+                <div class="chart-container" style="height: 400px; position: relative;">
+                    <canvas id="duration-scatter-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Studies Table -->
+            <div class="table-subsection">
+                <h3>Study Database</h3>
+                <div class="table-wrapper">
+                    <table id="studies-table" class="studies-table">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="study">Study <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="agent">Agent <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="population">Population <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="duration">Duration (weeks) <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="weight-loss">Weight Loss (%) <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="sample-size">Sample Size <span class="sort-arrow">↕</span></th>
+                                <th class="sortable" data-sort="placebo">Placebo (%) <span class="sort-arrow">↕</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="studies-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pediatric Focus -->
+        <section class="pediatric-section">
+            <h2>Pediatric Studies Focus</h2>
+            <div class="pediatric-content">
+                <div class="pediatric-summary">
+                    <div class="pediatric-info">
+                        <h3>Pediatric Population Analysis</h3>
+                        <p>Specialized analysis of GLP-1 RA efficacy in adolescents (12-18 years) and children (6-12 years).</p>
+                        <div class="pediatric-stats">
+                            <div class="pediatric-stat">
+                                <span class="stat-number" id="pediatric-mean-weight-loss">-</span>
+                                <span class="stat-label">Mean Pediatric Weight Loss</span>
+                            </div>
+                            <div class="pediatric-stat">
+                                <span class="stat-number" id="adult-mean-weight-loss">-</span>
+                                <span class="stat-label">Mean Adult Weight Loss</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container" style="height: 350px; position: relative;">
+                    <canvas id="pediatric-comparison-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weight Loss Thresholds -->
+        <section class="thresholds-section">
+            <h2>Weight Loss Achievement Thresholds</h2>
+            <div class="threshold-controls">
+                <label class="filter-label">Select Agent:</label>
+                <select id="threshold-agent-select" class="form-control">
+                    <option value="all">All Agents</option>
+                    <option value="Liraglutide">Liraglutide</option>
+                    <option value="Semaglutide">Semaglutide</option>
+                    <option value="Tirzepatide">Tirzepatide</option>
+                    <option value="Orforglipron">Orforglipron</option>
+                </select>
+            </div>
+            <div class="chart-container" style="height: 400px; position: relative;">
+                <canvas id="thresholds-chart"></canvas>
+            </div>
+            <div class="threshold-legend">
+                <p><strong>Note:</strong> Threshold data is only available for studies that reported percentage of participants achieving specific weight loss targets.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
